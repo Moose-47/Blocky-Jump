@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -13,8 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("Jump Settings")]
     public float jumpForce = 7f;
     public LayerMask groundLayer;
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
+
 
     private Rigidbody2D rb;
     private SoundManager sm;
@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     private float startY;
     private float currentY;
 
+    private float inputX;
+    private bool isDead = false;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,9 +41,11 @@ public class PlayerController : MonoBehaviour
         tap.OnTap += pos => Jump();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if (GameManager.Instance.isDead) Dead();
+
+        isGrounded = CheckGrounded();
 
         if (isGrounded)
         {
@@ -50,18 +54,50 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        Vector2 velocity = rb.linearVelocity;
+        velocity.x = inputX * moveSpeed;
+
+        rb.linearVelocity = velocity;
+    }
+
     private void HandleTilt(Vector3 tilt)
     {
-        float move = tilt.x * tiltSensitivity;
-        rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
+        inputX = tilt.x * tiltSensitivity;
     }
 
     private void Jump()
     {
         if (!isGrounded) return;
 
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         sm.CreateSound(sm.playerJump);
+    }
+    private void Dead()
+    {
+        if (isDead) return;
+        isDead = true;
+        sm.CreateSound(sm.playerDeath);
+    }
+
+    private bool CheckGrounded()
+    {
+        BoxCollider2D box = GetComponent<BoxCollider2D>();
+        float rayLength = 0.1f; // adjust to your needs
+        Vector2 bottomLeft = new Vector2(box.bounds.min.x, box.bounds.min.y);
+        Vector2 bottomCenter = new Vector2(box.bounds.center.x, box.bounds.min.y);
+        Vector2 bottomRight = new Vector2(box.bounds.max.x, box.bounds.min.y);
+
+        RaycastHit2D hitLeft = Physics2D.Raycast(bottomLeft, Vector2.down, rayLength, groundLayer);
+        RaycastHit2D hitCenter = Physics2D.Raycast(bottomCenter, Vector2.down, rayLength, groundLayer);
+        RaycastHit2D hitRight = Physics2D.Raycast(bottomRight, Vector2.down, rayLength, groundLayer);
+
+        // Debug rays in scene view
+        Debug.DrawRay(bottomLeft, Vector2.down * rayLength, Color.red);
+        Debug.DrawRay(bottomCenter, Vector2.down * rayLength, Color.red);
+        Debug.DrawRay(bottomRight, Vector2.down * rayLength, Color.red);
+
+        return hitLeft || hitCenter || hitRight;
     }
 }

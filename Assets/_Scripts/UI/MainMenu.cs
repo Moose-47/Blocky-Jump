@@ -59,7 +59,7 @@ public class MainMenu : MonoBehaviour
 #endif
     }
 
-    private void CloseAllPanels()
+    public void CloseAllPanels()
     {
         settingsPanel.SetActive(false);
         howToPlayPanel.SetActive(false);

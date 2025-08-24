@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
@@ -25,9 +26,11 @@ public class SettingsMenu : MonoBehaviour
     public Slider tiltSensitivitySlider;
     public TMP_Text tiltSensitivityTxt;
 
+    private SoundManager sm;
     private void Start()
     {
         LoadSettings();
+        sm = FindAnyObjectByType<SoundManager>();
 
         // Setup sliders
         SetupSlider(masterSlider, masterTxt, "Master");
@@ -40,6 +43,15 @@ public class SettingsMenu : MonoBehaviour
         sfxToggle.onValueChanged.AddListener(SetSfxToggle);
 
         tiltSensitivitySlider.onValueChanged.AddListener(SetTiltSensitivity);
+
+        EventTrigger trigger = sfxSlider.gameObject.GetComponent<EventTrigger>();
+        if (trigger == null)
+            trigger = sfxSlider.gameObject.AddComponent<EventTrigger>();
+
+        EventTrigger.Entry entry = new EventTrigger.Entry();
+        entry.eventID = EventTriggerType.PointerUp;
+        entry.callback.AddListener((data) => OnSfxSliderReleased());
+        trigger.triggers.Add(entry);
     }
 
     private void OnDestroy()
@@ -71,6 +83,11 @@ public class SettingsMenu : MonoBehaviour
         OnSliderValueChanged(slider.value, slider, sliderText, parameterName);
     }
 
+    private void OnSfxSliderReleased()
+    {
+        sm.CreateSound(sm.playerJump);
+    }
+
     private void SetMute(bool muted)
     {
         PlayerPrefs.SetInt("Muted", muted ? 1 : 0);
@@ -80,13 +97,13 @@ public class SettingsMenu : MonoBehaviour
     private void SetMusicToggle(bool enabled)
     {
         PlayerPrefs.SetInt("MusicToggle", enabled ? 1 : 0);
-        mixer.SetFloat("Music", enabled ? 0f : -80f); //instantly mute/unmute music
+        mixer.SetFloat("Music", enabled ? -80f : 0f); //instantly mute/unmute music
     }
 
     private void SetSfxToggle(bool enabled)
     {
         PlayerPrefs.SetInt("SfxToggle", enabled ? 1 : 0);
-        mixer.SetFloat("SFX", enabled ? 0f : -80f); //instantly mute/unmute SFX
+        mixer.SetFloat("SFX", enabled ? -80f : 0f); //instantly mute/unmute SFX
     }
     #endregion
     #region Gameplay
@@ -120,8 +137,8 @@ public class SettingsMenu : MonoBehaviour
 
         // Load toggles
         muteToggle.isOn = PlayerPrefs.GetInt("Muted", 0) == 1;
-        musicToggle.isOn = PlayerPrefs.GetInt("MusicToggle", 1) == 1;
-        sfxToggle.isOn = PlayerPrefs.GetInt("SfxToggle", 1) == 1;
+        musicToggle.isOn = PlayerPrefs.GetInt("MusicToggle", 0) == 1;
+        sfxToggle.isOn = PlayerPrefs.GetInt("SfxToggle", 0) == 1;
 
         // Load tilt sensitivity
         float sensitivity = PlayerPrefs.GetFloat("TiltSensitivity", 2f);

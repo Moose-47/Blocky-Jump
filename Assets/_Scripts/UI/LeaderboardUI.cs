@@ -32,6 +32,7 @@ public class LeaderboardUI : MonoBehaviour
         foreach (Transform child in contentParent)
             Destroy(child.gameObject);
 
+        int rank = 1;
         foreach (var entry in result.Leaderboard)
         {
             GameObject go = Instantiate(leaderboardEntryPrefab, contentParent);
@@ -39,6 +40,9 @@ public class LeaderboardUI : MonoBehaviour
 
             texts[0].text = entry.DisplayName;
             texts[1].text = entry.StatValue.ToString();
+            texts[2].text = $"#{rank}";
+
+            rank++;
         }
     }
     private void OnLeaderboardfailure(PlayFabError error) => Debug.LogError("Failed to get leaderboard: " + error.GenerateErrorReport());   

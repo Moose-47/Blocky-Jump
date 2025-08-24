@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public bool isDead = false;
+
     private int Score;
     public int _score
     {
@@ -16,9 +18,6 @@ public class GameManager : MonoBehaviour
 
     private int highScore;
     public int Highscore => highScore;
-
-    [Header("UI References")]
-    public GameObject gameOverPanel;
 
     private void Awake()
     {
@@ -35,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerDeath()
     {
-        gameOverPanel.SetActive(true);
+        isDead = true;
         Time.timeScale = 0f;
     }
 }

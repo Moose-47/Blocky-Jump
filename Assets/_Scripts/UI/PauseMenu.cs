@@ -10,26 +10,25 @@ public class PauseMenu : MonoBehaviour
     public GameObject settingsPanel;
 
     public Button pauseButton;
-    public Button backButton;
 
     private void Start()
     {
+        pauseButton.gameObject.SetActive(true);
         pausePanel.SetActive(false);
         howToPlayPanel.SetActive(false);
         settingsPanel.SetActive(false);
 
         if (pauseButton) pauseButton.onClick.AddListener(Pause);
-        if (backButton) backButton.onClick.AddListener(CloseAllPanels);
     }
     private void OnDestroy()
     {
         pauseButton.onClick.RemoveAllListeners();
-        backButton.onClick.RemoveAllListeners();
     }
 
     private void Pause()
     {
         pausePanel.SetActive(true);
+        pauseButton.gameObject.SetActive(false);
         Time.timeScale = 0f;
     }
     
@@ -37,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     {
         CloseAllPanels();
         pausePanel.SetActive(false);
+        pauseButton.gameObject.SetActive(true);
         Time.timeScale = 1.0f;
     }
 
@@ -66,7 +66,7 @@ public class PauseMenu : MonoBehaviour
 #endif
     }
 
-    private void CloseAllPanels()
+    public void CloseAllPanels()
     {
         settingsPanel.SetActive(false);
         howToPlayPanel.SetActive(false);

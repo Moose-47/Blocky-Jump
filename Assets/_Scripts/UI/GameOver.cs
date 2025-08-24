@@ -11,8 +11,18 @@ public class GameOver : MonoBehaviour
     public TMP_Text finalScoreTxt;
     public TMP_Text highscoreTxt;
 
+    [Header("Music")]
+    public AudioSource gamePlayMusic;
+    public AudioSource gameOverMusic;
+
     private void OnEnable()
     {
+        if (gamePlayMusic != null && gamePlayMusic.isPlaying)
+            gamePlayMusic.Stop();
+
+        if (gameOverMusic != null && !gameOverMusic.isPlaying)
+            gameOverMusic.Play();
+
         int score = GameManager.Instance._score;
         int highscore = GameManager.Instance.Highscore;
 
@@ -46,8 +56,20 @@ public class GameOver : MonoBehaviour
             );
     }
 
-    public void PlayAgain() => SceneManager.LoadScene("GameScene");
-    public void MainMenu() => SceneManager.LoadScene("Main Menu");
+    public void PlayAgain()
+    { 
+        Time.timeScale = 1.0f;
+        GameManager.Instance.isDead = false;
+        GameManager.Instance._score = 0;
+        SceneManager.LoadScene("GameScene");
+    }
+    public void MainMenu()
+    {
+        Time.timeScale = 1.0f;
+        GameManager.Instance.isDead = false;
+        GameManager.Instance._score = 0;
+        SceneManager.LoadScene("Main Menu");
+    }
     public void OpenLeaderboard() => leaderboardPanel.SetActive(true);
     public void CloseLeaderboard() => leaderboardPanel.SetActive(false);
     public void QuitGame()

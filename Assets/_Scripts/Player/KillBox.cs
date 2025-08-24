@@ -12,7 +12,7 @@ public class KillBox : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("block"))
-            if (collision.transform.position.y > transform.position.y && player.IsGrounded) 
-                GameManager.Instance.PlayerDeath();
+            if (collision.transform.position.y > transform.position.y)
+                GameManager.Instance.PlayerDeath(); 
     }
 }

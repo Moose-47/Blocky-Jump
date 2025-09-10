@@ -13,6 +13,11 @@ public class KillBox : MonoBehaviour
     {
         if (collision.CompareTag("block"))
             if (collision.transform.position.y > transform.position.y)
-                GameManager.Instance.PlayerDeath(); 
+            {
+                Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
+                Debug.Log("Block velocity: " + rb.linearVelocity);
+                if (rb != null && rb.linearVelocity.sqrMagnitude > 0.01f)
+                    GameManager.Instance.PlayerDeath();
+            }
     }
 }

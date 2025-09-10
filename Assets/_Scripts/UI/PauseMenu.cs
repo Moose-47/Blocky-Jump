@@ -54,7 +54,13 @@ public class PauseMenu : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
+        GameManager.Instance._score = 0;
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void GiveUp()
+    {
+        GameManager.Instance.PlayerDeath();
     }
 
     public void QuitGame()

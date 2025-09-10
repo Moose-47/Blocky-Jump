@@ -34,8 +34,8 @@ public class InputManager : MonoBehaviour
         if (Input.touchCount > 0)
         {
             var t = Input.GetTouch(0);
-            if (t.phase == TouchPhase.Began) OnTouchStarted?.Invoke();
-            if (t.phase == TouchPhase.Ended) OnTouchEnded?.Invoke();
+            if (t.phase == UnityEngine.TouchPhase.Began) OnTouchStarted?.Invoke();
+            if (t.phase == UnityEngine.TouchPhase.Ended) OnTouchEnded?.Invoke();
         }
 #endif
     }

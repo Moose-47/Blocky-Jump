@@ -116,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!60 &6180094278232776276
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -182,6 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd39e7da9bc735408b546ea2e7181f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground:
+  lockVelocityThreshold: 0.01
+  spawnDelay: 0.1
+  groundLayers:
     serializedVersion: 2
     m_Bits: 8

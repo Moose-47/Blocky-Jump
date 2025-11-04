@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -15,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 7f;
     public LayerMask groundLayer;
 
+    [Header("Power-Up Settings")]
+    [SerializeField] private GameObject unstuckOrigin;
 
     private Rigidbody2D rb;
     private SoundManager sm;
@@ -50,7 +51,8 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             currentY = transform.position.y;
-            GameManager.Instance._score = Mathf.Max(GameManager.Instance._score, Mathf.RoundToInt(currentY - startY));
+            int newScore = Mathf.FloorToInt((currentY - startY) * 10f);
+            GameManager.Instance._score = Mathf.Max(GameManager.Instance._score, newScore);
         }
     }
 
@@ -74,6 +76,7 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         sm.CreateSound(sm.playerJump);
     }
+
     private void Dead()
     {
         if (isDead) return;
@@ -99,5 +102,44 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(bottomRight, Vector2.down * rayLength, Color.red);
 
         return hitLeft || hitCenter || hitRight;
+    }
+
+    public void PerformDoubleJump()
+    {
+        if (isGrounded) return; //Don’t double jump from ground
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        sm.CreateSound(sm.playerJump);
+    }
+
+    public void ActivateSlowTime(float duration)
+    {
+        StartCoroutine(SlowTimeRoutine(duration));
+    }
+
+    private System.Collections.IEnumerator SlowTimeRoutine(float duration)
+    {
+        Time.timeScale = 0.5f;
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = 1f;
+    }
+
+    public void UseUnstuck()
+    {
+        if (unstuckOrigin == null) return;
+
+        RaycastHit2D[] hits = Physics2D.RaycastAll(unstuckOrigin.transform.position, Vector2.down, 20f);
+
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.collider == null) continue;
+
+            if (hit.collider.CompareTag("LockedBlock"))
+            {
+                //Teleport player just above the locked block
+                transform.position = new Vector2(transform.position.x, hit.point.y + 0.25f);
+                return;
+            }
+        }
     }
 }

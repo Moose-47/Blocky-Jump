@@ -1,9 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using PlayFab;
 using PlayFab.ClientModels;
-using System.Collections.Generic;
 
 public class LeaderboardUI : MonoBehaviour
 {

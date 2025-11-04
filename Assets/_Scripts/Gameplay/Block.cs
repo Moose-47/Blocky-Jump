@@ -40,6 +40,7 @@ public class Block : MonoBehaviour
             Mathf.Abs(rb.linearVelocity.y) < lockVelocityThreshold)
         {
             rb.bodyType = RigidbodyType2D.Static;
+            gameObject.tag = "LockedBlock";
             sm.CreateSound(sm.blockLand);
             isLocked = true;
         }

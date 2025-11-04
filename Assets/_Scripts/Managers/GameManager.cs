@@ -1,6 +1,3 @@
-using PlayFab;
-using PlayFab.ClientModels;
-using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -34,7 +31,16 @@ public class GameManager : MonoBehaviour
 
     public void PlayerDeath()
     {
+        if (isDead) return;
+
         isDead = true;
+
+        //Add current score to persistent points
+        int totalPoints = PlayerPrefs.GetInt("Points", 0);
+        totalPoints += _score;
+        PlayerPrefs.SetInt("Points", totalPoints);
+        PlayerPrefs.Save();
+
         Time.timeScale = 0f;
     }
 }

@@ -1,19 +1,20 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoreUI : MonoBehaviour
 {
     [Header("UI References")]
-    public Text pointsText;
+    public TMP_Text pointsText;
 
     public Button buyDoubleJumpButton;
-    public Text doubleJumpUsesText;
+    public TMP_Text doubleJumpUsesText;
 
     public Button buyUnstuckButton;
-    public Text unstuckUsesText;
+    public TMP_Text unstuckUsesText;
 
     public Button buySlowTimeButton;
-    public Text slowTimeUsesText;
+    public TMP_Text slowTimeUsesText;
 
     [Header("Power-Up Costs")]
     public int doubleJumpCost = 100;

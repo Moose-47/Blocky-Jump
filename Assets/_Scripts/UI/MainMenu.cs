@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject howToPlayPanel;
     public GameObject creditsPanel;
     public GameObject leaderboardPanel;
+    public GameObject powerUpsPanel;
 
     [Header("Highscore Display")]
     public TMP_Text highscoreText;
@@ -21,6 +22,7 @@ public class MainMenu : MonoBehaviour
         howToPlayPanel.SetActive(false);
         creditsPanel.SetActive(false);
 
+        GameManager.Instance._score = 0;
         int highscore = PlayerPrefs.GetInt("Highscore", 0);
         highscoreText.text = "Highscore: " + highscore.ToString();
     }
@@ -50,6 +52,12 @@ public class MainMenu : MonoBehaviour
         leaderboardPanel.SetActive(true);
     }
 
+    public void OpenPowerUps()
+    {
+        CloseAllPanels();
+        powerUpsPanel.SetActive(true);
+    }
+
     public void QuitGame()
     {
 #if UNITY_EDITOR
@@ -65,5 +73,6 @@ public class MainMenu : MonoBehaviour
         howToPlayPanel.SetActive(false);
         creditsPanel.SetActive(false);
         leaderboardPanel.SetActive(false);
+        powerUpsPanel.SetActive(false);
     }
 }

@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [Header("Power-Up Settings")]
     [SerializeField] private GameObject unstuckOrigin;
 
+    public bool hasDoubleJumped = false;
+
     private Rigidbody2D rb;
     private SoundManager sm;
 
@@ -27,7 +29,7 @@ public class PlayerController : MonoBehaviour
     private float currentY;
 
     private float inputX;
-    private bool isDead = false;
+    [HideInInspector] public bool isDead = false;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded)
         {
+            hasDoubleJumped = false;
             currentY = transform.position.y;
             int newScore = Mathf.FloorToInt((currentY - startY) * 10f);
             GameManager.Instance._score = Mathf.Max(GameManager.Instance._score, newScore);
@@ -106,8 +109,9 @@ public class PlayerController : MonoBehaviour
 
     public void PerformDoubleJump()
     {
-        if (isGrounded) return; //Don’t double jump from ground
+        if (isGrounded || hasDoubleJumped) return; //Don’t double jump from ground
 
+        hasDoubleJumped = true;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         sm.CreateSound(sm.playerJump);
     }
@@ -128,7 +132,7 @@ public class PlayerController : MonoBehaviour
     {
         if (unstuckOrigin == null) return;
 
-        RaycastHit2D[] hits = Physics2D.RaycastAll(unstuckOrigin.transform.position, Vector2.down, 20f);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(unstuckOrigin.transform.position, Vector2.down, 50f);
 
         foreach (RaycastHit2D hit in hits)
         {

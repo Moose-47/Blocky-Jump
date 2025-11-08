@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(InputManager))]
 public class TapDetection : MonoBehaviour
@@ -35,6 +36,16 @@ public class TapDetection : MonoBehaviour
     private void HandleTouchEnded()
     {
         float timeHeld = Time.time - startTime;
+
+#if UNITY_EDITOR
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+            return;
+#else
+        if (EventSystem.current != null && Input.touchCount > 0 &&
+            EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+            return;
+#endif
+
         if (timeHeld <= tapTimeOut)
             OnTap?.Invoke(startPosition);
     }

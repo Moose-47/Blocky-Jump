@@ -8,7 +8,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject pausePanel;
     public GameObject howToPlayPanel;
     public GameObject settingsPanel;
-
+    public GameObject powerUpsPanel;
+    public GameObject gameOverPanel;
     public Button pauseButton;
 
     private void Start()
@@ -23,6 +24,14 @@ public class PauseMenu : MonoBehaviour
     private void OnDestroy()
     {
         pauseButton.onClick.RemoveAllListeners();
+    }
+
+    private void Update()
+    {
+        if (pausePanel.gameObject.activeSelf || gameOverPanel.gameObject.activeSelf) 
+            powerUpsPanel.SetActive(false);
+        else
+            powerUpsPanel.SetActive(true);
     }
 
     private void Pause()

@@ -11,6 +11,9 @@ public class GameOver : MonoBehaviour
     public TMP_Text finalScoreTxt;
     public TMP_Text highscoreTxt;
 
+    public GameObject settingsPanel;
+    public GameObject powerUpsPanel;
+
     [Header("Music")]
     public AudioSource gamePlayMusic;
     public AudioSource gameOverMusic;
@@ -22,6 +25,9 @@ public class GameOver : MonoBehaviour
 
         if (gameOverMusic != null && !gameOverMusic.isPlaying)
             gameOverMusic.Play();
+
+        powerUpsPanel.SetActive(false);
+        settingsPanel.SetActive(false);
 
         int score = GameManager.Instance._score;
         int highscore = GameManager.Instance.Highscore;

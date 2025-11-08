@@ -1,19 +1,21 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PowerUpUI : MonoBehaviour
 {
     [Header("References")]
+    public GameObject powerUpsPanel;
     public PlayerController player;
 
     public Button doubleJumpButton;
-    public Text doubleJumpUsesText;
+    public TMP_Text doubleJumpUsesText;
 
     public Button slowTimeButton;
-    public Text slowTimeUsesText;
+    public TMP_Text slowTimeUsesText;
 
     public Button unstuckButton;
-    public Text unstuckUsesText;
+    public TMP_Text unstuckUsesText;
 
     [Header("Slow Time Settings")]
     public float slowTimeDuration = 3f;
@@ -35,7 +37,7 @@ public class PowerUpUI : MonoBehaviour
     private void Update()
     {
         UpdateUI();
-
+        if (player.isDead) powerUpsPanel.SetActive(false);
         if (unstuckButton != null && unstuckOrigin != null && player != null)
         {
             unstuckTimer += Time.unscaledDeltaTime;
@@ -82,9 +84,12 @@ public class PowerUpUI : MonoBehaviour
         int uses = PlayerPrefs.GetInt("DoubleJump", 0);
         if (uses > 0)
         {
-            player?.PerformDoubleJump();
-            PlayerPrefs.SetInt("DoubleJump", uses - 1);
-            PlayerPrefs.Save();
+            if (player && !player.hasDoubleJumped)
+            {
+                player.PerformDoubleJump();
+                PlayerPrefs.SetInt("DoubleJump", uses - 1);
+                PlayerPrefs.Save();
+            }
         }
     }
 

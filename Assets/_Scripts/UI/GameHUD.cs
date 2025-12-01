@@ -38,7 +38,7 @@ public class GameHUD : MonoBehaviour
     private void UpdateScoreUI()
     {
         if (scoreText != null && GameManager.Instance != null)
-            scoreText.text = $"Score: {GameManager.Instance._score}";
+            scoreText.text = $"{GameManager.Instance._score}";
     }
 
     private void UpdateTimerUI()

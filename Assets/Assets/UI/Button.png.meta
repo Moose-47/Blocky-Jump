@@ -1,0 +1,1289 @@
+fileFormatVersion: 2
+guid: ce9ba89e6e6470f45a97c9cab5d64851
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 649223268058989734
+    second: Button_0
+  - first:
+      213: -9000188618666376746
+    second: Button_1
+  - first:
+      213: 8467241744927558709
+    second: Button_2
+  - first:
+      213: 1566552715412073297
+    second: Button_3
+  - first:
+      213: -1257769187640015746
+    second: Button_4
+  - first:
+      213: -2574449355943416012
+    second: Button_5
+  - first:
+      213: 2527607607167286074
+    second: Button_6
+  - first:
+      213: -1727787259211401930
+    second: Button_7
+  - first:
+      213: -7707917330291737424
+    second: Button_8
+  - first:
+      213: -9112927591779324202
+    second: Button_9
+  - first:
+      213: -3167664012565464253
+    second: Button_10
+  - first:
+      213: -1962688518803993622
+    second: Button_11
+  - first:
+      213: 7001558939514288092
+    second: Button_12
+  - first:
+      213: -2534983082481615764
+    second: Button_13
+  - first:
+      213: -5646349190705867672
+    second: Button_14
+  - first:
+      213: 3692987858164446456
+    second: Button_15
+  - first:
+      213: 5428179340570738698
+    second: Button_16
+  - first:
+      213: 1867482156725876864
+    second: Button_17
+  - first:
+      213: -9017320334548713245
+    second: Button_18
+  - first:
+      213: 1700495067048141879
+    second: Button_19
+  - first:
+      213: 6751135681320707386
+    second: Button_20
+  - first:
+      213: 8236786002934464123
+    second: Button_21
+  - first:
+      213: 5342558913192633760
+    second: Button_22
+  - first:
+      213: 5383375605554606906
+    second: Button_23
+  - first:
+      213: 2774136157585447902
+    second: Button_24
+  - first:
+      213: 6560905107333770281
+    second: Button_25
+  - first:
+      213: 1032802241139969492
+    second: Button_26
+  - first:
+      213: -3814991329465442402
+    second: Button_27
+  - first:
+      213: 5783416599399022740
+    second: Button_28
+  - first:
+      213: -2022265328733692931
+    second: Button_29
+  - first:
+      213: 8397750464773233318
+    second: Button_30
+  - first:
+      213: 3483080695849883246
+    second: Button_31
+  - first:
+      213: -513853620004673297
+    second: Button_32
+  - first:
+      213: 1149965043967199153
+    second: Button_33
+  - first:
+      213: 8202982801951292199
+    second: Button_34
+  - first:
+      213: 8335653965997463283
+    second: Button_35
+  - first:
+      213: -3296422214811686936
+    second: Button_36
+  - first:
+      213: -7884316226445378206
+    second: Button_37
+  - first:
+      213: 329179307603019822
+    second: Button_38
+  - first:
+      213: 5028851763982921854
+    second: Button_39
+  - first:
+      213: 1666055357140064740
+    second: Button_40
+  - first:
+      213: -3799445192906511259
+    second: Button_41
+  - first:
+      213: -6388602372712830260
+    second: Button_42
+  - first:
+      213: 6762294671284738582
+    second: Button_43
+  - first:
+      213: -3693334070074915802
+    second: Button_44
+  - first:
+      213: -7949739079447191990
+    second: Button_45
+  - first:
+      213: 316594803166377029
+    second: Button_46
+  - first:
+      213: 1915689711813898502
+    second: Button_47
+  - first:
+      213: -8249452332903114564
+    second: Button_48
+  - first:
+      213: 3055179230697656751
+    second: Button_49
+  - first:
+      213: -5437718409993158963
+    second: Button_50
+  - first:
+      213: 6788073149342788526
+    second: Button_51
+  - first:
+      213: 362285486421269608
+    second: Button_52
+  - first:
+      213: -8486880690075151666
+    second: Button_53
+  - first:
+      213: 7315432663026557618
+    second: Button_54
+  - first:
+      213: -8857660461956031860
+    second: Button_55
+  - first:
+      213: -7027898379629578861
+    second: Button_56
+  - first:
+      213: -5638841771896318018
+    second: Button_57
+  - first:
+      213: -4917924155231684192
+    second: Button_58
+  - first:
+      213: -8534457592845771510
+    second: Button_59
+  - first:
+      213: -7430620441116040236
+    second: Button_60
+  - first:
+      213: -5169306948258027830
+    second: Button_61
+  - first:
+      213: 5749483071219289829
+    second: Button_62
+  - first:
+      213: -1447448183596630268
+    second: Button_63
+  - first:
+      213: 4577389718884465228
+    second: Button_64
+  - first:
+      213: 3588590943939872562
+    second: Button_65
+  - first:
+      213: 1465316016034729081
+    second: Button_66
+  - first:
+      213: 8823795947172931691
+    second: Button_67
+  - first:
+      213: 7462202648365240442
+    second: Button_68
+  - first:
+      213: 7635997389503488795
+    second: Button_69
+  - first:
+      213: 6652610891747407723
+    second: Button_70
+  - first:
+      213: 7299586912066798694
+    second: Button_71
+  - first:
+      213: 5172765682611304666
+    second: Button_72
+  - first:
+      213: 1675581169107846930
+    second: Button_73
+  - first:
+      213: 4029781094173570374
+    second: Button_74
+  - first:
+      213: 4846964195729850547
+    second: Button_75
+  - first:
+      213: 4917742006536777641
+    second: Button_76
+  - first:
+      213: -732919354533639280
+    second: Button_77
+  - first:
+      213: 6944255488136808940
+    second: Button_78
+  - first:
+      213: 3870225793131435464
+    second: Button_79
+  - first:
+      213: -88422493728642912
+    second: Button_80
+  - first:
+      213: 182106290254041280
+    second: Button_81
+  - first:
+      213: 4759410467910583563
+    second: Button_82
+  - first:
+      213: 2527867632029376968
+    second: Button_83
+  - first:
+      213: -4972130508362725353
+    second: Button_84
+  - first:
+      213: 8166741962948184791
+    second: Button_85
+  - first:
+      213: 7196803646864648295
+    second: Button_86
+  - first:
+      213: -6605609971302970958
+    second: Button_87
+  - first:
+      213: 8774348722808692169
+    second: Button_88
+  - first:
+      213: -6428811127638167565
+    second: Button_89
+  - first:
+      213: -3635615825807070283
+    second: Button_90
+  - first:
+      213: -478338998829124272
+    second: Button_91
+  - first:
+      213: 863051617165971739
+    second: Button_92
+  - first:
+      213: 7402929243891044717
+    second: Button_93
+  - first:
+      213: 6331995553438954449
+    second: Button_94
+  - first:
+      213: -5887831196675285966
+    second: Button_95
+  - first:
+      213: 6389431915087070993
+    second: Button_96
+  - first:
+      213: 306945627999611348
+    second: Button_97
+  - first:
+      213: 267776122850364566
+    second: Button_98
+  - first:
+      213: -4065907631462304403
+    second: Button_99
+  - first:
+      213: 7426878587700818622
+    second: Button_100
+  - first:
+      213: -8113699647157722651
+    second: Button_101
+  - first:
+      213: -5485751370416213820
+    second: Button_102
+  - first:
+      213: -2353285296990511661
+    second: Button_103
+  - first:
+      213: -6077559985842808706
+    second: Button_104
+  - first:
+      213: -6383610854375382512
+    second: Button_105
+  - first:
+      213: -9111333787095590668
+    second: Button_106
+  - first:
+      213: 7452140305695129204
+    second: Button_107
+  - first:
+      213: 3794387033355461946
+    second: Button_108
+  - first:
+      213: 8851452112847293948
+    second: Button_109
+  - first:
+      213: 8269270312080622695
+    second: Button_110
+  - first:
+      213: 8156552477544657503
+    second: Button_111
+  - first:
+      213: -3201992732360178975
+    second: Button_112
+  - first:
+      213: 7200326711712038251
+    second: Button_113
+  - first:
+      213: 5172830335837900069
+    second: Button_114
+  - first:
+      213: -3142911445965621102
+    second: Button_115
+  - first:
+      213: -4890768124128906465
+    second: Button_116
+  - first:
+      213: 2594784692463712743
+    second: Button_117
+  - first:
+      213: 1937501353234036095
+    second: Button_118
+  - first:
+      213: -7865209599696954037
+    second: Button_119
+  - first:
+      213: -3066152101885311177
+    second: Button_120
+  - first:
+      213: 12371102164938456
+    second: Button_121
+  - first:
+      213: -7376671570470850471
+    second: Button_122
+  - first:
+      213: 1740079866407487480
+    second: Button_123
+  - first:
+      213: -4160138122532722424
+    second: Button_124
+  - first:
+      213: -6722969943086248030
+    second: Button_125
+  - first:
+      213: -2865883659273246322
+    second: Button_126
+  - first:
+      213: 8998802271477043495
+    second: Button_127
+  - first:
+      213: -4775076756472942417
+    second: Button_128
+  - first:
+      213: 8029673296183758054
+    second: Button_129
+  - first:
+      213: 2570150347966803897
+    second: Button_130
+  - first:
+      213: -7980882047657279659
+    second: Button_131
+  - first:
+      213: 7156585870097973618
+    second: Button_132
+  - first:
+      213: 1772909024037868827
+    second: Button_133
+  - first:
+      213: 5342331679731679060
+    second: Button_134
+  - first:
+      213: -9111868827194651591
+    second: Button_135
+  - first:
+      213: 2154856372699869729
+    second: Button_136
+  - first:
+      213: -2261446452882861596
+    second: Button_137
+  - first:
+      213: 8583358112069971292
+    second: Button_138
+  - first:
+      213: 7016947202967900600
+    second: Button_139
+  - first:
+      213: 5869481857998065409
+    second: Button_140
+  - first:
+      213: -7462460272061149094
+    second: Button_141
+  - first:
+      213: 7052865562323203559
+    second: Button_142
+  - first:
+      213: 1816687393042042684
+    second: Button_143
+  - first:
+      213: -2694819110670027985
+    second: Button_144
+  - first:
+      213: 7545114732331908697
+    second: Button_145
+  - first:
+      213: 7610131806187538186
+    second: Button_146
+  - first:
+      213: 3196021191250227665
+    second: Button_147
+  - first:
+      213: 4613498236702426086
+    second: Button_148
+  - first:
+      213: -3313638532641172331
+    second: Button_149
+  - first:
+      213: -4077060764371415934
+    second: Button_150
+  - first:
+      213: 7979045163547524824
+    second: Button_151
+  - first:
+      213: -4865165331975975355
+    second: Button_152
+  - first:
+      213: -8041100408497022260
+    second: Button_153
+  - first:
+      213: -2252963883353583436
+    second: Button_154
+  - first:
+      213: -6472478622066484969
+    second: Button_155
+  - first:
+      213: 4316476864560076961
+    second: Button_156
+  - first:
+      213: 4203789096975539984
+    second: Button_157
+  - first:
+      213: -7365373708259466156
+    second: Button_158
+  - first:
+      213: 7001102589721831740
+    second: Button_159
+  - first:
+      213: 4996007019950049265
+    second: Button_160
+  - first:
+      213: 5928124954688913050
+    second: Button_161
+  - first:
+      213: 2665742032032711993
+    second: Button_162
+  - first:
+      213: 6032571440826428995
+    second: Button_163
+  - first:
+      213: 1782774878304644276
+    second: Button_164
+  - first:
+      213: 8426844944655353056
+    second: Button_165
+  - first:
+      213: 2764206852314622356
+    second: Button_166
+  - first:
+      213: -7583446634981181479
+    second: Button_167
+  - first:
+      213: -7704478667995936836
+    second: Button_168
+  - first:
+      213: -2017971447778422688
+    second: Button_169
+  - first:
+      213: -3501827219784801208
+    second: Button_170
+  - first:
+      213: -427617612070273580
+    second: Button_171
+  - first:
+      213: -3395601946421477460
+    second: Button_172
+  - first:
+      213: 7908146074125681529
+    second: Button_173
+  - first:
+      213: 6141223363168085064
+    second: Button_174
+  - first:
+      213: -4061304719054648593
+    second: Button_175
+  - first:
+      213: -1506507531135600804
+    second: Button_176
+  - first:
+      213: 1718350513335235063
+    second: Button_177
+  - first:
+      213: 3514535336260140666
+    second: Button_178
+  - first:
+      213: -3846011595537482006
+    second: Button_179
+  - first:
+      213: 4606266718204690340
+    second: Button_180
+  - first:
+      213: 5303352741881662791
+    second: Button_181
+  - first:
+      213: -3332195770341372485
+    second: Button_182
+  - first:
+      213: -2776659769369720314
+    second: Button_183
+  - first:
+      213: -1196624742818403007
+    second: Button_184
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BtnBackplate
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2413
+        width: 429
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7b5b772c88a2160800000000000000
+      internalID: 7001558939514288092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SettingsBtn
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 2527
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35e593122ad0bd50800000000000000
+      internalID: 6751135681320707386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpBackplate
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2178
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd00629a20455e00800000000000000
+      internalID: 1032802241139969492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_33
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 2309
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b708cd5d1f75ff00800000000000000
+      internalID: 1149965043967199153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResumeButton
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1873
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e52804d6adca190800000000000000
+      internalID: -7949739079447191990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainMenuBtn
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1873
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa192e2c25d266a20800000000000000
+      internalID: 3055179230697656751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_65
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1655
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23748b9437c3dc130800000000000000
+      internalID: 3588590943939872562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giveup
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 1655
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217c109123cd04710800000000000000
+      internalID: 1675581169107846930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quitgame
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 1440
+        width: 185
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da8dc9cb88165170800000000000000
+      internalID: 8166741962948184791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quitgamehover
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 1437
+        width: 185
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7686a9959ce20e360800000000000000
+      internalID: 7196803646864648295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quitgameclick
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1437
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b945b7aab82454a0800000000000000
+      internalID: -6605609971302970958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_129
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 784
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec0971e1512f6f60800000000000000
+      internalID: 8029673296183758054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_130
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 784
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf68edcf120ba320800000000000000
+      internalID: 2570150347966803897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_131
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 784
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f781bef063e3190800000000000000
+      internalID: -7980882047657279659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PauseBtn
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 566
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50945d9be3007890800000000000000
+      internalID: -7462460272061149094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_161
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 348
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e7c5cdc3ee44250800000000000000
+      internalID: 5928124954688913050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeaderboardBtn
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 350
+        width: 185
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e48a7f64da22f470800000000000000
+      internalID: 8426844944655353056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackBtn
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 130
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973492c84f06fbd60800000000000000
+      internalID: 7908146074125681529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: refresh
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 2746
+        width: 194
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a45ccac81b5c8428ab1a1f7f351f28
+      internalID: -1091263690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c7bc21856e2b5fe49a60419ef8ef25d5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      .: -5638841771896318018
+      BackBtn: 7908146074125681529
+      BtnBackplate: 7001558939514288092
+      BtnBackplateHover: -2534983082481615764
+      Button_1: -9000188618666376746
+      Button_10: -3167664012565464253
+      Button_100: 7426878587700818622
+      Button_101: -8113699647157722651
+      Button_102: -5485751370416213820
+      Button_103: -2353285296990511661
+      Button_104: -6077559985842808706
+      Button_105: -6383610854375382512
+      Button_106: -9111333787095590668
+      Button_107: 7452140305695129204
+      Button_108: 3794387033355461946
+      Button_109: 8851452112847293948
+      Button_11: -1962688518803993622
+      Button_110: 8269270312080622695
+      Button_111: 8156552477544657503
+      Button_112: -3201992732360178975
+      Button_113: 7200326711712038251
+      Button_114: 5172830335837900069
+      Button_115: -3142911445965621102
+      Button_116: -4890768124128906465
+      Button_117: 2594784692463712743
+      Button_118: 1937501353234036095
+      Button_119: -7865209599696954037
+      Button_12: -1084083292
+      Button_120: -3066152101885311177
+      Button_121: 12371102164938456
+      Button_122: -7376671570470850471
+      Button_123: 1740079866407487480
+      Button_124: -4160138122532722424
+      Button_125: -6722969943086248030
+      Button_126: -2865883659273246322
+      Button_127: 8998802271477043495
+      Button_128: -4775076756472942417
+      Button_129: 8029673296183758054
+      Button_130: 2570150347966803897
+      Button_131: -7980882047657279659
+      Button_132: 7156585870097973618
+      Button_133: 1772909024037868827
+      Button_134: 5342331679731679060
+      Button_135: -9111868827194651591
+      Button_136: 2154856372699869729
+      Button_137: -2261446452882861596
+      Button_138: 8583358112069971292
+      Button_139: 7016947202967900600
+      Button_140: 5869481857998065409
+      Button_144: -2694819110670027985
+      Button_145: 7545114732331908697
+      Button_146: 7610131806187538186
+      Button_147: 3196021191250227665
+      Button_148: 4613498236702426086
+      Button_149: -3313638532641172331
+      Button_15: 3692987858164446456
+      Button_150: -4077060764371415934
+      Button_151: 7979045163547524824
+      Button_152: -4865165331975975355
+      Button_153: -8041100408497022260
+      Button_154: -2252963883353583436
+      Button_155: -6472478622066484969
+      Button_156: 4316476864560076961
+      Button_157: 4203789096975539984
+      Button_158: -7365373708259466156
+      Button_159: 7001102589721831740
+      Button_16: 5428179340570738698
+      Button_160: 4996007019950049265
+      Button_161: 5928124954688913050
+      Button_162: 2665742032032711993
+      Button_163: 6032571440826428995
+      Button_164: 1782774878304644276
+      Button_168: -7704478667995936836
+      Button_169: -2017971447778422688
+      Button_17: 1867482156725876864
+      Button_170: -3501827219784801208
+      Button_171: -427617612070273580
+      Button_172: -3395601946421477460
+      Button_176: -1506507531135600804
+      Button_177: 1718350513335235063
+      Button_178: 3514535336260140666
+      Button_179: -3846011595537482006
+      Button_18: -9017320334548713245
+      Button_180: 4606266718204690340
+      Button_181: 5303352741881662791
+      Button_182: -3332195770341372485
+      Button_183: -2776659769369720314
+      Button_184: -1196624742818403007
+      Button_19: 1700495067048141879
+      Button_2: 8467241744927558709
+      Button_23: 5383375605554606906
+      Button_24: 2774136157585447902
+      Button_25: 6560905107333770281
+      Button_27: -3814991329465442402
+      Button_28: 5783416599399022740
+      Button_29: -2022265328733692931
+      Button_3: 1566552715412073297
+      Button_30: 8397750464773233318
+      Button_31: 3483080695849883246
+      Button_32: -513853620004673297
+      Button_33: 1149965043967199153
+      Button_34: 8202982801951292199
+      Button_35: 8335653965997463283
+      Button_36: -3296422214811686936
+      Button_37: -7884316226445378206
+      Button_38: 329179307603019822
+      Button_39: 5028851763982921854
+      Button_4: -1257769187640015746
+      Button_40: 1666055357140064740
+      Button_41: -3799445192906511259
+      Button_42: -6388602372712830260
+      Button_43: 6762294671284738582
+      Button_44: -3693334070074915802
+      Button_48: -8249452332903114564
+      Button_5: -2574449355943416012
+      Button_52: 362285486421269608
+      Button_53: -8486880690075151666
+      Button_54: 7315432663026557618
+      Button_55: -8857660461956031860
+      Button_56: -7027898379629578861
+      Button_58: -4917924155231684192
+      Button_59: -8534457592845771510
+      Button_6: 2527607607167286074
+      Button_60: -7430620441116040236
+      Button_61: -5169306948258027830
+      Button_62: 5749483071219289829
+      Button_63: -1447448183596630268
+      Button_64: 4577389718884465228
+      Button_65: 3588590943939872562
+      Button_66: 1465316016034729081
+      Button_67: 8823795947172931691
+      Button_68: 7462202648365240442
+      Button_69: 7635997389503488795
+      Button_7: -1727787259211401930
+      Button_70: 6652610891747407723
+      Button_71: 7299586912066798694
+      Button_72: 5172765682611304666
+      Button_76: 4917742006536777641
+      Button_77: -732919354533639280
+      Button_78: 6944255488136808940
+      Button_79: 3870225793131435464
+      Button_8: -7707917330291737424
+      Button_80: -88422493728642912
+      Button_81: 182106290254041280
+      Button_82: 4759410467910583563
+      Button_83: 2527867632029376968
+      Button_84: -4972130508362725353
+      Button_88: 8774348722808692169
+      Button_89: -6428811127638167565
+      Button_9: -9112927591779324202
+      Button_90: -3635615825807070283
+      Button_91: -478338998829124272
+      Button_92: 863051617165971739
+      Button_93: 7402929243891044717
+      Button_94: 6331995553438954449
+      Button_95: -5887831196675285966
+      Button_96: 6389431915087070993
+      Button_97: 306945627999611348
+      Button_98: 267776122850364566
+      Button_99: -4065907631462304403
+      ButtonbackplateClick: -5646349190705867672
+      LeaderboardBtn: 8426844944655353056
+      MainMenuBtn: 3055179230697656751
+      PauseBtn: -7462460272061149094
+      PowerUpBackplate: 1032802241139969492
+      ResumeButton: -7949739079447191990
+      SettingsBtn: 6751135681320707386
+      backbtnclick: -4061304719054648593
+      backbtnhover: 6141223363168085064
+      giveup: 1675581169107846930
+      giveupclick: 4846964195729850547
+      giveuphover: 4029781094173570374
+      leaderboardclick: -7583446634981181479
+      leaderboardhover: 2764206852314622356
+      mainmenuclick: 6788073149342788526
+      mainmenuhover: -5437718409993158963
+      pauseclick: 1816687393042042684
+      pausehover: 7052865562323203559
+      quitgame: 8166741962948184791
+      quitgameclick: -6605609971302970958
+      quitgamehover: 7196803646864648295
+      refresh: 649223268058989734
+      resumeClick: 1915689711813898502
+      resumeHover: 316594803166377029
+      settingsclick: 5342558913192633760
+      settingshover: 8236786002934464123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

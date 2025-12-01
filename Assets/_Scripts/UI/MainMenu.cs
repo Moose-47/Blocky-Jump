@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
 
         GameManager.Instance._score = 0;
         int highscore = PlayerPrefs.GetInt("Highscore", 0);
-        highscoreText.text = "Highscore: " + highscore.ToString();
+        highscoreText.text = "Highscore\n" + highscore.ToString();
     }
 
     public void PlayGame() => SceneManager.LoadScene("GameScene");

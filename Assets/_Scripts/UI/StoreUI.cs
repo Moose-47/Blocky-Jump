@@ -68,7 +68,7 @@ public class StoreUI : MonoBehaviour
     {
         int currentPoints = PlayerPrefs.GetInt("Points", 0);
         if (pointsText != null)
-            pointsText.text = "Points: " + currentPoints;
+            pointsText.text = "" + currentPoints;
 
         if (doubleJumpUsesText != null)
             doubleJumpUsesText.text = "x" + PlayerPrefs.GetInt("DoubleJump", 0);
